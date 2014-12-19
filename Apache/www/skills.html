@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Meta-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Ian Lamon | Curriculum Vitae </title>
+		<meta name="description" content="Ian Lamon | Curriculum Vitae. This site is an online version of my Curriculum Vitae">
+		<meta name="keywords" content="Ian Lamon, Curriculum Vitae, Software Developer, Web Developer">
+
+		
+		<!--Favicon-->
+		<link rel="shortcut icon" href="favicon.png">
+
+		<!--CSS-->
+		<link rel="stylesheet" href="css/acss_style.css">
+		<link rel="stylesheet" href="css/nivo-slider.css"/>
+		<link rel="stylesheet" href="css/default.css"/>
+
+		<!--JavaScript-->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="js/jquery.horizontalNav.min.js"></script>
+    	<script type="text/javascript" src="js/acss_main.js"></script>
+	</head>
+
+	<body onload="displayDate();">
+		<div id="site-header">
+			<!--Date at top of page-->
+			<section id="date"></section>
+
+			<h1 id="headingTitle"> IanLamon.com</h1>
+		</div>
+		<div>
+		<!--Menu-->
+		<nav id="navDiv" class="horizontal-nav full-width horizontalNav-notprocessed">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="experience.html">Experience</a></li>
+				<li><a href="references.html">References</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="form.html">Form</a></li>
+			</ul>
+		</nav><!-- end #nav -->
+	</div>
+			
+		<!--Content-->
+		<section id="content">						
+			<h3>Click on a button to discover more about my skills</h3>
+			<button id="action-button">Web Development</button>
+			<button id="action-button1">Programming</button>
+			<button id="action-button2">Software</button>
+			<button id="action-button3">Recognitions</button>
+			<div id="info1"></div>
+		</section>           
+				
+		<!--Footer-->
+		<footer id="footer">
+			<div>
+				<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Ian Lamon</p>
+			</div>
+		</footer>
+		
+		<!--Back to Top Link-->
+		<a id="back-to-top" href="#site-header"></a>
+
+		<!--Scripts-->
+		
+		<!--jQuery-->
+		<script type="text/javascript">
+			$('#action-button').click(function() {
+			   $.ajax({
+			      url: 'data/skills.json',
+			      data: {
+			         format: 'json'
+			      },
+			      error: function(data) {
+			      	console.log(data);
+			         $('#info1').html('<p>An error has occurred</p>');
+			      },
+			      dataType: 'json',
+			      success: function(data) {
+			      	console.log(data);
+			         	var $title = $('<h1>').text(data.skills[0].skill_name);
+         				var $description = $('<p>').text(data.skills[0].skill_description);
+			         $('#info1')
+			            .html($title)
+			            .append($description);
+			      },
+			      type: 'GET'
+			   });
+			});
+
+			$('#action-button1').click(function() {
+			   $.ajax({
+			      url: 'data/skills.json',
+			      data: {
+			         format: 'json'
+			      },
+			      error: function(data) {
+			      	console.log(data);
+			         $('#info1').html('<p>An error has occurred</p>');
+			      },
+			      dataType: 'json',
+			      success: function(data) {
+			      	console.log(data);
+			         	var $title = $('<h1>').text(data.skills[1].skill_name);
+         				var $description = $('<p>').text(data.skills[1].skill_description);
+			         $('#info1')
+			            .html($title)
+			            .append($description);
+			      },
+			      type: 'GET'
+			   });
+			});
+
+			$('#action-button2').click(function() {
+			   $.ajax({
+			      url: 'data/skills.json',
+			      data: {
+			         format: 'json'
+			      },
+			      error: function(data) {
+			      	console.log(data);
+			         $('#info1').html('<p>An error has occurred</p>');
+			      },
+			      dataType: 'json',
+			      success: function(data) {
+			      	console.log(data);
+			         	var $title = $('<h1>').text(data.skills[2].skill_name);
+         				var $description = $('<p>').text(data.skills[2].skill_description);
+			         $('#info1')
+			            .html($title)
+			            .append($description);
+			      },
+			      type: 'GET'
+			   });
+			});
+
+			$('#action-button3').click(function() {
+	         	var $title = $('<h1>').text(myJSON.skills[3].skill_name);
+ 				var $description = $('<p>').text(myJSON.skills[3].skill_description);
+			         $('#info1')
+			            .html($title)
+			            .append($description);
+			});
+
+			var myJSON = {"skills" : 
+							[{"skill_name" : "Web Development", "skill_description" :"My web development skills include HTML5, CSS3, JavaScript and jQuery, Ruby on Rails and Android App Development. I also have strong SQL database knowledge with experience in PostreSQL, MySQL, SQL Server and SQLite3."},
+							{"skill_name" : "Programming", "skill_description" :"I am an excellent software developer, with a keen eye for detail. I code primarily in Java but am also comfortable in Ruby and C#. I have experience in Eclipse, Aptana and Visual Studio IDEs."},
+							{"skill_name" : "Software", "skill_description" :"I have extensive graphic design experience and am fully trained in Adobe Illustrator and Adobe PhotoShop packages. I am strong across the full suite of MicroSoft Office. I have previous experience using Magento and WordPress content management systems."},
+							{"skill_name" : "Recognitions", "skill_description" :"Oracle Certified Associate in Java SE7 Programming in 2014. Academic Excellence Award, National University of Ireland, Maynooth in 2013. Academic Excellence Award, Institute of Technology, Tallaght in 2002. Member of the Marketing Institute of Ireland."}]
+						};
+
+		</script>
+	</body>
+</html>

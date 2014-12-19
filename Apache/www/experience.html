@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Meta-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Ian Lamon | Curriculum Vitae </title>
+		<meta name="description" content="Ian Lamon | Curriculum Vitae. This site is an online version of my Curriculum Vitae">
+		<meta name="keywords" content="Ian Lamon, Curriculum Vitae, Software Developer, Web Developer">
+
+		
+		<!--Favicon-->
+		<link rel="shortcut icon" href="favicon.png">
+
+		<!--CSS-->
+		<link rel="stylesheet" href="css/acss_style.css">
+		<link rel="stylesheet" href="css/nivo-slider.css"/>
+		<link rel="stylesheet" href="css/default.css"/>
+
+		<!--JavaScript-->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="js/jquery.horizontalNav.min.js"></script>
+    	<script src="js/acss_main.js"></script>
+	</head>
+
+	<body onload="displayDate();">
+		<div id="site-header">
+			<!--Date at top of page-->
+			<section id="date"></section>
+
+			<h1 id="headingTitle"> IanLamon.com</h1>
+		</div>
+		<div>
+		<!--Menu-->
+		<nav id="navDiv" class="horizontal-nav full-width horizontalNav-notprocessed">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="education.html">Education</a></li>
+				<li><a href="experience.html">Experience</a></li>
+				<li><a href="references.html">References</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="form.html">Form</a></li>
+			</ul>
+		</nav><!-- end #nav -->
+	</div>
+			
+		<!--Content-->
+		<section id="content">						
+			
+			<!--Accordion-->
+			<div id="accordion">
+			<h1>Work Experience</h1>
+                <dl>
+                    <dt> September 2014 - Present: Student at National College of Ireland</dt>
+                    <dd> See <a href="education.html">Education</a> section for further details.</dd>
+                    <dt> September 2012 - July 2014: Student at National University of Ireland, Maynooth</dt> 
+                    <dd> See <a href="education.html">Education</a> section for further details.</dd> 
+                    <dt> October 2003 - July 2012: Marketing Impressions</dt>
+                    <dd> <h3>Description</h3>
+							<p>
+								Marketing Impressions provide numerous Irish Blue Chip companies with a range of below
+								the line marketing services, from branded promotional merchandise solutions to event management.
+								My role with Marketing Impressions incorporated <strong>Account Management, Marketing and Graphic Design</strong>.
+							</p>
+							<p>
+								</p><h3>Achievements</h3>
+								<ul>
+									<li>Introduced sales software to the company which handled the order process more efficiently,
+									from quotations and order acknowledgements to invoicing.</li>
+									<li>Introduced electronic invoicing which increased the speed clients received their invoices and reduced costs.</li>
+									<li>Negotiated preferential discounts with suppliers, delivering cost savings.</li>
+									<li>Project managed the re-launch of Marketing Impressions’ website.</li>
+								</ul>
+					</dd>
+                    <dt> July 2002 - October 2003: Marketing Impressions</dt>
+                    <dd> <h3>Description</h3>
+								<p>
+									MRI Ireland is a private medical company providing diagnostic imaging services to Hospitals and Health Boards
+									throughout Ireland. MRI Ireland is part of the UMS Neuromed group of companies, which operates across Europe
+									from its head office in Germany. My role with MRI Ireland was to carry out all marketing activities for the company.
+								</p>
+								<p>
+									</p><h3>Achievements</h3>
+									<ul>
+										<li>Designed and implemented direct marketing campaigns to both the medical and legal sector to increase awareness of our service.</li>
+										<li>Instrumental in the launch of a new MRI imaging service in Belvoir Park Hospital, Belfast which achieved great exposure in television, press and radio media.</li>
+										<li>Prepared successful tenders for public projects and to private medical insurance companies for coverage of our service.</li>
+									</ul>
+					</dd>
+                </dl>
+            </div>
+		</section>           
+				
+		<!--Footer-->
+		<footer id="footer">
+			<div>
+				<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Ian Lamon</p>
+			</div>
+		</footer>
+		
+		<!--Back to Top Link-->
+		<a id="back-to-top" href="#site-header"></a>
+
+		<!--Scripts-->
+		
+		<!--jQuery-->
+		<script type="text/javascript">
+			$(document).ready(function () {
+			    accordion();
+			});
+		</script>
+	</body>
+</html>

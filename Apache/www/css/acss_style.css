@@ -1,0 +1,268 @@
+/* import Google font */
+@import "http://fonts.googleapis.com/css?family=Ubuntu";
+
+body{
+	width:100%;
+	margin:0 auto;
+	font-family:'Ubuntu',sans-serif;
+	background-color: #EEE;
+}
+#headingTitle
+{
+	margin: 0px;
+	padding-left: 70px;
+	padding-top: 20px;
+	color: #fff;
+	font-size: 60px;
+}
+
+/*Site Header*/
+#site-header {
+    background-color: #38424B;
+    height: 120px;
+}
+
+#date
+{
+	float: right;
+	color: #fff;
+	padding-right: 30px;
+	padding-top: 30px;
+}
+
+/*navigation bar styling for HorizontalNav Plugin*/
+.horizontal-nav {
+  background: #efefef;
+}
+.horizontal-nav ul {
+  background: #128F9A;
+  float: left;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.horizontal-nav ul li {
+  float: left;
+  border-left: 1px solid #0e7079;
+  list-style-type: none;
+  width: 14%;
+}
+.horizontal-nav ul li:first-child {
+  border-left: 0 none;
+}
+.horizontal-nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  border-top: 1px solid rgba(255,255,255, 0.25);
+  border-left: 1px solid rgba(255,255,255, 0.25);
+  text-decoration: none;
+}
+.horizontal-nav ul li:first-child a {
+  border-left: 0 none;
+}
+.horizontal-nav ul li a:hover {
+  background: #12808a;
+}
+
+#content
+{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+/*****************************************************/
+
+form{
+	text-align:left;
+	border:1px solid #ccc;
+	width:400px;
+	padding:50px;
+	margin-top:20px;
+	box-shadow:0 0 15px;
+	border-radius:6px;
+
+}
+h1{
+	margin-top:40px
+}
+hr{
+	margin-top:-5px;
+	margin-bottom: 20px;
+	width:90%;
+	float: left;
+}
+form input[type="text"]{
+	width:70%;
+	margin-top:10px;
+	height:35px;
+	margin-bottom:10px;
+	padding:10px;
+	border:3px solid #2BC1F2
+}
+form textarea{
+	width:100%;
+	border:3px solid #2BC1F2;
+	padding:10px;
+	margin-bottom:25px;
+	margin-top:10px;
+	height:100px;
+	resize:none
+}
+form input[type="submit"]{
+	width:70%;
+	padding:10px 45px;
+	background-color:#2BC1F2;
+	border:none;
+	color:#fff;
+	font-size:18px;
+	font-weight:700;
+	cursor:pointer;
+	font-family:'Ubuntu',sans-serif
+}
+
+/* General Styling */
+input[type="text"]{
+	width:20%;
+	height:20px;
+	margin-bottom:10px;
+	padding:5px;
+	border:3px solid #2BC1F2
+}
+button{
+	padding:10px 45px;
+	background-color:#2BC1F2;
+	border:none;
+	color:#fff;
+	font-size:18px;
+	font-weight:700;
+	cursor:pointer;
+	font-family:'Ubuntu',sans-serif
+}
+
+/*Portfolio*/
+#thumb
+{
+	width: 200px;
+	height: 200px;
+}
+
+/*References*/
+#construction
+{
+	height: 380px;
+	width: 100%;
+	margin:0 auto;
+}
+
+/*Education Tabs*/
+.etabs
+{
+	margin: 0;
+	padding: 0;
+}
+
+.tab
+{
+	display: inline-block;
+	zoom:1;
+	*display:inline;
+	background: #eee;
+	border: solid 1px #999;
+	border-bottom: none;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+}
+
+.tab a
+{
+	font-size: 14px;
+	line-height: 2em;
+	display: block;
+	padding: 0 10px;
+	outline: none;
+	text-decoration: none;
+	color: #38424B;
+}
+
+.tab a:hover
+{
+	text-decoration: underline;
+}
+.tab.active
+{
+	background: #128F9A;
+	padding-top: 6px;
+	position: relative;
+	top: 1px;
+	border-color: #666;
+}
+
+.tab a.active
+{
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+.tab-container
+{
+	padding: 10px;
+	-moz-border-radius: 0 4px 4px 4px;
+	-webkit-border-radius: 0 4px 4px 4px;
+}
+
+.tabBox
+{
+	width: 70%;
+	padding: 20px;
+	border-style: solid !important;
+	border: 2px;
+	border-color: #38424B !important;
+}
+
+/*Experience Accordion*/
+#accordion
+{
+	min-height: 385px !important;
+}
+
+dd, dt
+{
+    margin: 10px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+}
+dt
+{
+    height: auto;
+    background: #38424B;
+    font-size: 150%;
+}
+dd
+{
+    height: auto;
+    background: #128F9A;
+    display: none;
+}
+
+/*Skills Page*/
+#info1
+{
+	min-height: 300px;
+}
+
+/*Footer*/
+#footer
+{
+	margin: 0px;
+	padding-left: 70px;
+	padding-top: 20px;
+	color: #fff;
+	height: 50px;
+	background-color: #38424B;
+	text-align: center;
+}
